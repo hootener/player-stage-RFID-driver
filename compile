@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -R build
+mkdir build
+cd build
+cp ../testrfid.cfg testrfid.cfg
+cmake ../
+make
+player testrfid.cfg
